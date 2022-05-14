@@ -1,0 +1,63 @@
+<!-- _nec - обезательно -->
+<!-- _email - проверка email -->
+<!-- _tel - проверка на телефон -->
+<!-- _pas - проверка на пароль -->
+<!-- _check - проверка на чекБокс -->
+
+<form class="form" action="" novalidate>
+  <div class="form__group">
+    <input type="text" class="input _nec" name="name" placeholder="Name">
+  </div>
+
+  <div class="form__group">
+    <input type="password" class="input _nec _pas" name="password" placeholder="Password">
+  </div>
+
+  <div class="form__group">
+    <input type="email" class="input _nec _email" name="email" placeholder="Email">
+  </div>
+
+  <div class="form__group">
+    <input type="tel" class="input _nec _tel" name="phone" placeholder="Phone">
+  </div>
+
+  <div class="form__group">
+    <div class="form__lebel">right-handed or left-handed</div>
+
+    <div class="option">
+      <div class="option__item">
+        <input type="radio" class="option__input" id="rightHandR" name="hand" checked>
+        <label class="hand" for="rightHandR">right-handed</label>
+      </div>
+      <div class="option__item">
+        <input type="radio" class="option__input" id="leftHandL" name="hand">
+        <label class="hand" for="leftHandL">left-handed</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="form__group">
+    <select name="age" class="input">
+      <option value="age" selected disabled><span>age</span></option>
+      <option value="1 to 13"><span>baby</span></option>
+      <option value="14 to 18"><span>teenager</span></option>
+      <option value="19 to ...">
+        <sapn>male</sapn>
+      </option>
+    </select>
+  </div>
+
+  <div class="form__group">
+    <label class="form__group__mesTitel" for="formImText">About Me*</label>
+    <textarea name="massage" id="formImText" class="input _nec"></textarea>
+  </div>
+
+  <div class="form__group">
+    <input type="checkbox" class="checkbox__input _check" id="privacy_check">
+    <label class="checkbox__label" for="privacy_check">Accept privacy policy</label>
+  </div>
+
+  <button class="btn" type="submit">
+    Submit form
+  </button>
+</form>
