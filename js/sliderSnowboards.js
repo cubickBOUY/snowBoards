@@ -13,22 +13,29 @@ var swiper = new Swiper(".snowboards__content", {
     disableOnInteraction: false,
   },
   breakpoints: {
-    1006:
+    1000:
     {
       slidesPerView:4.5,
+      spaceBetween:110,
+    },
+    770:
+    {
+      slidesPerView:3,
       spaceBetween:150,
     },
-
-    555:
+    608:
     {
-      slidesPerView:3.5,
+      slidesPerView:3,
       spaceBetween:70,
     },
-
-    270:
+    588:
     {
-      slidesPerView:2,
-      spaceBetween:40,
+      slidesPerView:2.5,
+      spaceBetween:150,
+    },
+    160:
+    {
+      slidesPerView:1,
     },
   },
 
